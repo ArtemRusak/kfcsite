@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+h1,h2, figcaption{
+    font-family: 'Open Sans', sans-serif;
+}
 
 header{
    background-color: rgb(236, 11, 56); 
@@ -19,6 +22,7 @@ header a{
 }
 footer{
     background-color: rgb(214, 199, 199);
+    padding: 20px;
 }
 header button{
     background-color:dimgray;
@@ -36,6 +40,7 @@ header button:hover{
     min-height: 80vh;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.082), rgb(0, 0, 0, 0.342)) , url(ktc.jpg);
     background-size: cover;
+    background-position: center;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -46,4 +51,68 @@ header button:hover{
     max-width:700px;
     font-size: 20px;
     color: rgb(20, 20, 20);
+}
+.demon{
+    padding: 50px 20px;
+    background: rgb(70, 69, 68);
+    text-align: center;
+}
+img{
+    max-width: 100%;
+
+}
+.demon-wrapper{
+    display:flex;
+    justify-content: space-between;
+
+}
+figure{
+    width: 22%;
+    background-color: rgb(99, 98, 98);
+    padding: 20px 10px;
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom:10px;
+}
+@media(max-width: 1032px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    nav{
+        margin: 20px 0;
+    }
+    nav a{
+        display: block;
+    }
+
+}
+@media(max-width:760px){
+.demon-wrapper{
+    flex-wrap:wrap;
+}
+figure{
+    width:45%;
+    margin-bottom: 20px;
+}
+}
+@media(max-width: 550px){
+    h1{
+        font-size: 18px;
+    }
+    .hero p{
+
+        font-size: 18px;
+    }
+    header button{
+        padding: 7px 10px ;
+    }
+    figure{
+        width:70%;
+    }
+    .demon-wrapper{
+        justify-content: center;
+    }
 }
